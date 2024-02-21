@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: linear-gradient(to bottom, #3b82f6 30vh, rgb(230, 230, 230) 30vh);
+  div {
+    background: url("../imgs/wave.svg") no-repeat;
+    background-position: 0 calc(30vh - 48px);
+  }
+}
+.body {
+  @apply relative rounded-md mx-10 sm:mx-auto;
+  max-width: 600px;
+}
+.side-btn {
+  background: url("../imgs/three\ dots.svg") no-repeat 90%;
+  background-position: 50% 50%;
+  @apply fixed right-4 bottom-4 aspect-square w-12 z-10 rounded-md bg-blue-500;
+}
+.menu-btn {
+  @apply text-center bg-blue-600 text-white rounded-md m-1 py-3 text-lg;
+  width: calc(100% - 8px);
+}
+.header {
+  @apply flex items-center gap-4 border-b py-3 text-lg mb-3;
+}
+.header img {
+  @apply w-8 rounded-md;
+}
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  img {
+    @apply w-14 sm:w-16;
+    aspect-ratio: 1;
+  }
+}
+#working-hours .row {
+  @apply flex justify-between border-b border-gray-400 mx-3 py-2 items-center;
+}
+#working-hours .row:nth-last-child(1) {
+  border: none;
+}
+#working-hours .row::after {
+  content: "10:00 am - 05:00 pm";
+  @apply text-sm text-gray-500;
+}
+section {
+  @apply mb-3 p-3 bg-white rounded-lg overflow-hidden;
+}
+
+#social-media {
+  .row {
+    @apply flex justify-between px-3;
+    .inner-row {
+      @apply flex gap-5;
+      img {
+        @apply w-8 sm:w-12 self-center;
+      }
+    }
+  }
+}
+.inner-row p {
+  @apply flex flex-col;
+}
+.inner-row p::after {
+  content: "Social account";
+  @apply text-sm text-[#767C83];
+}
+#contact-us .row {
+  @apply flex gap-4;
+}
