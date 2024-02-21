@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(to bottom, #3b82f6 30vh, rgb(230, 230, 230) 30vh);
+  background: linear-gradient(to bottom, #3b82f6 30vh, rgb(240, 240, 240) 30vh);
   div:nth-child(1) {
     background: url("../imgs/wave.svg") no-repeat;
     background-position: 0 calc(30vh - 48px);
